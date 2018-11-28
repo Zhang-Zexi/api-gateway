@@ -11,19 +11,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8762/eureka/
-zuul:
-  routes:
-  #  /myProduct/product/list -> /product/product/list
-#    aaaaaa:
-#      path: /myProduct/**
-#      serviceId: product
-#   simple writing
-    product: /myProduct/**
-  ignored-patterns:
-    - /**/product/listForOrder
 
-
-management:
-  security:
-    enabled: false
 
